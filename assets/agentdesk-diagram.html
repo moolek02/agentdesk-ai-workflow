@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><title>AgentDesk diagram</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1600px;height:1560px;background:#fff;font-family:'Leelawadee UI','Segoe UI',Tahoma,sans-serif;color:#111;position:relative;
+ background-image:radial-gradient(#e6e8ee 1px,transparent 1px);background-size:18px 18px}
+.abs{position:absolute}
+.brand{right:40px;top:30px;font-weight:700;font-size:20px}
+.brand b{color:#06c755}
+h1{position:absolute;left:0;right:0;top:56px;text-align:center;font-size:44px;letter-spacing:1px;font-weight:900}
+.sub{left:0;right:0;top:112px;text-align:center;font-size:18px;color:#555}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #d5d9e2;border-radius:12px;padding:8px 14px;font-size:15px;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.dot{width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:800}
+.card{background:#fff;border:1.5px solid #d5d9e2;border-radius:14px;box-shadow:0 3px 10px rgba(0,0,0,.06);padding:14px 16px}
+.lbl{font-size:12px;font-weight:800;letter-spacing:1.2px;color:#6b7280;text-transform:uppercase;margin-bottom:8px}
+.dark{background:#141821;color:#fff;border-color:#141821}
+.mgr{left:590px;top:400px;width:420px;height:96px;text-align:center;border-radius:14px}
+.mgr h2{font-size:24px;margin:6px 0 8px}
+.dept h3{font-size:18px;margin-bottom:2px}
+.dept .n{font-size:12px;color:#888;margin-bottom:10px}
+.ag{display:flex;align-items:center;gap:9px;font-size:14.5px;padding:5px 0;border-bottom:1px dashed #eceef3}
+.ag:last-child{border-bottom:none}
+.st{font-size:11px;font-weight:800;border-radius:20px;padding:2px 8px;display:inline-block;margin-bottom:8px}
+.ok{background:#dcfce7;color:#166534}.half{background:#fef3c7;color:#92400e}.road{background:#e5e7eb;color:#374151}
+.db{width:190px;text-align:center}
+.cyl{width:120px;height:90px;margin:0 auto 6px;border-radius:50%/18px;position:relative}
+.srv{background:#141821;color:#cfd6e4;border-radius:10px;padding:10px 12px;font-family:Consolas,monospace;font-size:13px;margin-bottom:8px}
+.srv .g{color:#4ade80}.srv .y{color:#facc15}.srv .w{color:#fff;font-weight:700}
+.term{font-family:Consolas,monospace;font-size:15px;line-height:1.65;padding:18px 20px}
+.term .p{color:#4ade80}.term .o{color:#fb923c}.term .m{color:#9ca3af}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.biz{font-size:13.5px;font-weight:600;padding:7px 10px}
+.road-card{border-style:dashed;background:#fafafa}
+.ex{color:#888;font-weight:400;font-size:13px}
+</style></head><body>
+
+<svg class="abs" style="left:0;top:0" width="1600" height="1560">
+ <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#3b82f6"/></marker>
+ <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111"/></marker>
+ <marker id="c" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#f97316"/></marker></defs>
+ <g fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6 5">
+  <path d="M800 205 V250"/><path d="M330 228 H1270"/>
+  <path d="M330 228 V250"/><path d="M1270 228 V250"/>
+  <path d="M800 340 V398" marker-end="url(#a)"/>
+  <path d="M230 360 H588" marker-end="url(#a)"/>
+  <path d="M1365 450 H1012" marker-end="url(#a)"/>
+ </g>
+ <g fill="none" stroke="#111" stroke-width="2">
+  <path d="M800 496 V530 H392 V556" marker-end="url(#b)"/>
+  <path d="M800 530 H1208 V556" marker-end="url(#b)"/>
+  <path d="M664 530 V556" marker-end="url(#b)"/>
+  <path d="M936 530 V556" marker-end="url(#b)" stroke-dasharray="5 5"/>
+ </g>
+ <g fill="none" stroke="#f97316" stroke-width="2.5">
+  <path d="M525 700 H545" marker-end="url(#c)"/>
+  <path d="M392 920 V990 H860 V1010" marker-end="url(#c)"/>
+  <path d="M664 920 V990"/>
+ </g>
+ 
+</svg>
+
+<div class="abs brand">Agent<b>Desk</b></div>
+<h1>THE AI BACK-OFFICE TEAM</h1>
+<div class="abs sub">ทีม AI Agent หลังร้าน · เลือกเปิดเฉพาะแผนกที่ต้องการ · คนตัดสินใจเสมอ</div>
+
+<!-- inputs -->
+<div class="abs" style="left:0;right:0;top:152px;text-align:center">
+ <div class="row" style="justify-content:center">
+  <span class="chip"><span class="dot" style="background:#06c755">L</span>กลุ่ม LINE ซัพพลายเออร์</span>
+  <span class="chip"><span class="dot" style="background:#0ea5e9">$</span>ยอดขาย (POS / CSV)</span>
+  <span class="chip"><span class="dot" style="background:#8b5cf6">฿</span>ยอดรับเงิน / สลิป</span>
+  <span class="chip"><span class="dot" style="background:#f97316">N</span>ข่าว & เทรนด์ (RSS)</span>
+  <span class="chip"><span class="dot" style="background:#64748b">S</span>สต็อกคงเหลือ</span>
+ </div>
+</div>
+
+<!-- profile + rules -->
+<div class="abs card" style="left:230px;top:252px;width:340px;height:88px">
+ <div class="lbl">Business Profile · ตั้งครั้งเดียว</div>
+ <div style="font-size:14px">สินค้า · หน่วยขาย · สูตรต้นทุน · เป้ากำไร<br><span class="ex">ร้านชาบู = หัว · โรงแรม = ห้อง-คืน</span></div>
+</div>
+<div class="abs card" style="left:600px;top:252px;width:400px;height:88px">
+ <div class="lbl">กฎกลาง · ทุกแผนกต้องทำตาม</div>
+ <div style="font-size:14px">ไม่สั่งซื้อ · ไม่โพสต์เอง · ตัวเลขคำนวณด้วยโค้ด<br>ข้อความไม่ชัด → ส่งให้คนตรวจ ไม่เดา</div>
+</div>
+<div class="abs card dark" style="left:1030px;top:252px;width:300px;height:88px">
+ <div class="lbl" style="color:#9ca3af">Knowledge · สะสมทุกวัน</div>
+ <div style="font-size:14px;font-family:Consolas,monospace">/price_history /stock<br>/sales /promos /profiles</div>
+</div>
+
+<!-- left DBs -->
+<div class="abs db" style="left:30px;top:250px">
+ <div class="cyl" style="background:linear-gradient(#22c55e,#15803d)"></div>
+ <div style="font-weight:700;font-size:14px">price_history.db</div><div class="ex">ราคาย้อนหลังต่อผู้ขาย</div>
+</div>
+<div class="abs db" style="left:30px;top:420px">
+ <div class="cyl" style="background:linear-gradient(#a78bfa,#6d28d9)"></div>
+ <div style="font-weight:700;font-size:14px">ledger.db</div><div class="ex">ยอดขาย · ยอดรับ · โปร</div>
+</div>
+<div class="abs db" style="left:30px;top:590px">
+ <div class="lbl" style="text-align:left">Approvals</div>
+ <div class="srv"><span class="y">●</span> รออนุมัติ <span class="w">3</span></div>
+ <div class="srv"><span class="g">●</span> ต้องตรวจ <span class="w">2</span></div>
+</div>
+
+<!-- right servers -->
+<div class="abs" style="left:1370px;top:250px;width:200px">
+ <div class="lbl">Scheduler</div>
+ <div class="srv"><span class="g">●</span> 02:00 <span class="w">night run</span></div>
+ <div class="srv"><span class="g">●</span> 07:00 <span class="w">morning brief</span></div>
+ <div class="lbl" style="margin-top:14px">LLM</div>
+ <div class="srv"><span class="g">●</span> Claude <span class="w">Haiku</span> อ่าน/เรียบเรียง</div>
+ <div class="srv"><span class="y">●</span> Claude <span class="w">Sonnet</span> ตรวจซ้ำ</div>
+ <div class="lbl" style="margin-top:14px">Backend</div>
+ <div class="srv"><span class="g">●</span> <span class="w">FastAPI</span> + SQLite</div>
+ <div class="srv"><span class="y">●</span> LINE <span class="w">webhook</span> (roadmap)</div>
+ <div class="lbl" style="margin-top:14px">Delivery</div>
+ <div class="srv"><span class="g">●</span> สรุปเช้า → <span class="w">LINE</span></div>
+ <div class="srv"><span class="g">●</span> การ์ด → <span class="w">เว็บ</span></div>
+</div>
+
+<!-- manager -->
+<div class="abs card dark mgr">
+ <h2>ผู้จัดการ AI</h2>
+ <div style="font-size:14px;color:#cbd5e1">รวมผลทุกแผนก → สรุปเดียว · ส่งต่อข้อมูลข้ามแผนก</div>
+</div>
+
+<!-- departments -->
+<div class="abs card dept" style="left:262px;top:560px;width:262px;height:360px">
+ <span class="st ok">● ทำแล้วในต้นแบบ</span>
+ <h3>จัดซื้อและต้นทุน</h3><div class="n">5 agents · ทุกคืน</div>
+ <div class="ag"><span class="dot" style="background:#06c755">1</span>Chat Reader <span class="ex">อ่านแชต LINE</span></div>
+ <div class="ag"><span class="dot" style="background:#06c755">2</span>Price Historian <span class="ex">ประวัติราคา</span></div>
+ <div class="ag"><span class="dot" style="background:#06c755">3</span>Stock Watcher <span class="ex">สต็อก/อัตราใช้</span></div>
+ <div class="ag"><span class="dot" style="background:#06c755">4</span>Buy Advisor <span class="ex">ซื้อ/รอ/ใกล้หมด</span></div>
+ <div class="ag"><span class="dot" style="background:#06c755">5</span>Cost Calculator <span class="ex">ต้นทุน/หน่วย</span></div>
+</div>
+<div class="abs card dept" style="left:546px;top:560px;width:262px;height:360px">
+ <span class="st ok">● ทำแล้วในต้นแบบ</span>
+ <h3>การตลาด</h3><div class="n">4 agents · สัปดาห์ละ 2 ครั้ง</div>
+ <div class="ag"><span class="dot" style="background:#f97316">1</span>News Scout <span class="ex">ข่าว/เทรนด์</span></div>
+ <div class="ag"><span class="dot" style="background:#f97316">2</span>Trend Filter <span class="ex">เลือกที่เกี่ยว</span></div>
+ <div class="ag"><span class="dot" style="background:#f97316">3</span>Promo Drafter <span class="ex">ร่างโปร</span></div>
+ <div class="ag"><span class="dot" style="background:#f97316">4</span>Margin Guard <span class="ex">กันขาดทุน</span></div>
+</div>
+<div class="abs card dept" style="left:830px;top:560px;width:262px;height:360px">
+ <span class="st half">◐ เวอร์ชันเล็ก</span>
+ <h3>บัญชีและรายงาน</h3><div class="n">4 agents · ทุกวัน/สัปดาห์</div>
+ <div class="ag"><span class="dot" style="background:#8b5cf6">1</span>CSV Importer <span class="ex">นำเข้ายอด</span></div>
+ <div class="ag"><span class="dot" style="background:#8b5cf6">2</span>Reconciler <span class="ex">กระทบยอด</span></div>
+ <div class="ag"><span class="dot" style="background:#8b5cf6">3</span>Duplicate Finder <span class="ex">ref ซ้ำ</span></div>
+ <div class="ag"><span class="dot" style="background:#8b5cf6">4</span>Weekly Reporter <span class="ex">สรุปสัปดาห์</span></div>
+</div>
+<div class="abs card dept road-card" style="left:1114px;top:560px;width:226px;height:360px">
+ <span class="st road">○ roadmap</span>
+ <h3>แผนกเสริม</h3><div class="n">ยังไม่ได้สร้าง</div>
+ <div class="ag"><span class="dot" style="background:#9ca3af">·</span>Slip Reader (OCR)</div>
+ <div class="ag"><span class="dot" style="background:#9ca3af">·</span>Bank Sync</div>
+ <div class="ag"><span class="dot" style="background:#9ca3af">·</span>Review Reply</div>
+ <div class="ag"><span class="dot" style="background:#9ca3af">·</span>Order Chat</div>
+</div>
+
+<!-- bottom: terminal -->
+<div class="abs card dark term" style="left:262px;top:1010px;width:500px;height:300px">
+ <div><span class="p">$</span> agentdesk status --today</div>
+ <div class="m">profile        ร้านชาบูบุฟเฟต์ (ตัวอย่าง)</div>
+ <div>prices read    <span class="o">40</span></div>
+ <div>buy now        หมูสามชั้น ~27 กก. <span class="m">(-4.1%)</span></div>
+ <div>wait           เนื้อวัว <span class="m">(+6.8%)</span></div>
+ <div>cost / head    <span class="o">104.84</span> ฿  margin <span class="o">64.9%</span></div>
+ <div>promo drafts   <span class="o">6</span>  waiting on you <span class="o">3</span></div>
+ <div class="m">morning-brief → LINE 07:00</div>
+</div>
+
+<!-- human handoff -->
+<div class="abs card" style="left:782px;top:1010px;width:270px;height:300px">
+ <div class="lbl">Human Handoff</div>
+ <div style="font-size:15px;line-height:1.9">
+  <b>คนสั่งของ</b> ตัดสินใจซื้อ & สั่งเอง<br>
+  <b>เจ้าของ</b> อนุมัติโปรก่อนโพสต์<br>
+  <b>เจ้าของ</b> ตรวจวันที่ยอดไม่ตรง<br>
+  <b>ทีม AgentDesk</b> ติดตั้ง & ตั้งโปรไฟล์
+ </div>
+</div>
+
+<!-- interrupts -->
+<div class="abs card" style="left:1072px;top:1010px;width:268px;height:300px">
+ <div class="lbl">อะไรทำให้ระบบหยุดรอคน</div>
+ <div style="font-size:14.5px;line-height:1.85">
+  ⚠ ข้อความราคาไม่มีหน่วย<br>
+  ⚠ ราคาพุ่งเกินปกติมาก<br>
+  ⚠ สต็อกพอไม่ถึง 1 วัน<br>
+  ⚠ ส่วนลดทำกำไรต่ำกว่าเป้า<br>
+  ⚠ ยอดเงินไม่ตรง / ref ซ้ำ<br>
+  ⚠ โปรของซัพพลายเออร์ (อ่านเอง)
+ </div>
+</div>
+
+<!-- business strip -->
+<div class="abs card" style="left:262px;top:1340px;width:1078px;height:150px">
+ <div class="lbl">ระบบเดียว ใช้ได้หลายธุรกิจ · เปลี่ยนแค่โปรไฟล์</div>
+ <div class="row" style="margin-top:6px;flex-wrap:nowrap;gap:8px">
+  <span class="chip biz">🟢 ร้านชาบู · 104.84 ฿/หัว</span>
+  <span class="chip biz">🟢 โรงแรม · 382.40 ฿/ห้อง-คืน</span>
+  <span class="chip biz">🟡 ร้านกาแฟ · ต่อแก้ว</span>
+  <span class="chip biz">🟡 ร้านวัสดุ · ต่อชิ้น</span>
+  <span class="chip biz">🟡 อู่ซ่อม/เต็นท์รถ · ต้องเพิ่มสูตร</span>
+ </div>
+ <div class="ex" style="margin-top:12px">🟢 ทดสอบในต้นแบบด้วยข้อมูลตัวอย่าง · 🟡 ภาพประกอบ ยังไม่ได้ทดสอบ · ตัวเลขทั้งหมดเป็นข้อมูลตัวอย่าง</div>
+</div>
+
+<div class="abs" style="left:0;right:0;top:1515px;text-align:center;font-size:13px;color:#999">github.com/moolek02/agentdesk-ai-workflow · CC BY 4.0</div>
+</body></html>
