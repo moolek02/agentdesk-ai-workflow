@@ -1,0 +1,160 @@
+{
+ "id": "coffee",
+ "name": "ร้านกาแฟสด 1 สาขา",
+ "business_type": "ร้านกาแฟ",
+ "sample_label": "ข้อมูลตัวอย่าง",
+ "unit_name": "แก้ว",
+ "unit_per": "ต่อแก้ว",
+ "price_label": "ราคาเฉลี่ยต่อแก้ว",
+ "fixed_cost_label": "แก๊ส/ไฟ/น้ำ+ค่าแรงส่วนแบ่ง",
+ "settings": {
+  "sell_price": 65,
+  "target_margin": 0.6,
+  "floor_margin": 0.5,
+  "fixed_cost_per_unit": 8,
+  "units_per_day": 120
+ },
+ "items": [
+  {
+   "name": "เมล็ดกาแฟคั่ว",
+   "unit": "กก.",
+   "price": 520,
+   "qty_per_unit": 0.018,
+   "aliases": [
+    "เมล็ดกาแฟ",
+    "กาแฟคั่ว",
+    "เมล็ด"
+   ],
+   "perishable": false,
+   "stock": 6
+  },
+  {
+   "name": "นมสด",
+   "unit": "ลิตร",
+   "price": 52,
+   "qty_per_unit": 0.15,
+   "aliases": [
+    "นมสด",
+    "นม"
+   ],
+   "perishable": true,
+   "stock": 14
+  },
+  {
+   "name": "นมข้นหวาน",
+   "unit": "กระป๋อง",
+   "price": 28,
+   "qty_per_unit": 0.04,
+   "aliases": [
+    "นมข้น"
+   ],
+   "perishable": false,
+   "stock": 20
+  },
+  {
+   "name": "น้ำเชื่อม",
+   "unit": "ขวด",
+   "price": 95,
+   "qty_per_unit": 0.012,
+   "aliases": [
+    "ไซรัป",
+    "น้ำเชื่อม"
+   ],
+   "perishable": false,
+   "stock": 6
+  },
+  {
+   "name": "แก้วพลาสติก+ฝา",
+   "unit": "ชุด",
+   "price": 2.2,
+   "qty_per_unit": 1,
+   "aliases": [
+    "แก้ว+ฝา",
+    "แก้วพลาสติก",
+    "แก้ว"
+   ],
+   "perishable": false,
+   "stock": 900
+  },
+  {
+   "name": "หลอด",
+   "unit": "ชิ้น",
+   "price": 0.35,
+   "qty_per_unit": 1,
+   "aliases": [
+    "หลอด"
+   ],
+   "perishable": false,
+   "stock": 1500
+  },
+  {
+   "name": "น้ำแข็ง",
+   "unit": "ถุง",
+   "price": 40,
+   "qty_per_unit": 0.05,
+   "aliases": [
+    "น้ำแข็ง"
+   ],
+   "perishable": true,
+   "stock": 3
+  }
+ ],
+ "chat_file": "sample_data/coffee_chat.txt",
+ "demand": {
+  "label": "ช่วงเวลา",
+  "slots": [
+   {
+    "start": "07:00",
+    "end": "09:00",
+    "value": 45
+   },
+   {
+    "start": "09:00",
+    "end": "12:00",
+    "value": 30
+   },
+   {
+    "start": "12:00",
+    "end": "14:00",
+    "value": 20
+   },
+   {
+    "start": "14:00",
+    "end": "16:00",
+    "value": 8
+   },
+   {
+    "start": "16:00",
+    "end": "18:00",
+    "value": 17
+   }
+  ]
+ },
+ "competitors": [
+  {
+   "shop": "ร้านกาแฟ A (สมมติ)",
+   "promo": "อเมริกาโน่ 45 บาท ช่วงบ่าย",
+   "price": 45
+  },
+  {
+   "shop": "ร้านกาแฟ B (สมมติ)",
+   "promo": "แก้วที่ 2 ลด 20%",
+   "pct": 20
+  }
+ ],
+ "voice": [
+  "อยากได้เมนูไม่หวาน (ตัวอย่าง)",
+  "บ่ายๆ อยากมีโปร (ตัวอย่าง)",
+  "นมสดอร่อย (ตัวอย่าง)"
+ ],
+ "news_keywords": [
+  "กาแฟ",
+  "คาเฟ่",
+  "coffee",
+  "ร้านกาแฟ",
+  "เครื่องดื่ม",
+  "นมสด"
+ ],
+ "sales_csv": "sample_data/coffee_sales.csv",
+ "payments_csv": "sample_data/coffee_payments.csv"
+}
